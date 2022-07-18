@@ -1,0 +1,36 @@
+* {
+	margin:0;
+	padding: 0;
+	
+}
+
+.gnb-menu {
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+	height: 60px;
+	
+	box-shadow : 0px 0px 8px 0px;
+}
+.gnb-menu a {
+	font-size : 24px;
+	font-weight:bold;
+	color: gray;
+	text-decoration: none;
+	position:relative;
+	padding: 6px 12px;
+}
+.gnb-menu a::after {
+	content:"";
+	position:absolute;
+	bottom:0;
+	left:50%;
+	transform:translateX(-50%);
+	width: 0;
+	height:4px;
+	background:gray;
+	transition: all .5s ease-out;	
+}
+.gnb-menu a:hover:after {
+	width:100%;
+}
