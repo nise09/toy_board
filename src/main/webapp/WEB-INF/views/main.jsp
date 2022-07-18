@@ -9,10 +9,7 @@
 <body>
 
 
-	<div>
-		hello !! world
-	</div>
-	<h1> push commit test !!</h1>
+	<h1> 심심하니깐 무슨 개인 프로젝트 만들까...</h1>
 	
 </body>
 </html>
