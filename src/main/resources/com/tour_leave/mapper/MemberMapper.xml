@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tour_leave.mapper.MemberMapper">
+
+	<select id="memberLogin" resultType="java.lang.Integer">					
+		SELECT COUNT(*) FROM tl_member WHERE tlm_id=#{id} AND tlm_pwd=#{pwd}
+	</select>
+	
+	<select id="selectSimpleMemberInfo" resultType="com.tour_leave.vo.SimpleMemberVO">
+		
+		SELECT tlm_id AS id, tlm_name AS name, tlm_grade AS grade , tlm_type AS type 
+		FROM tl_member
+		WHERE tlm_id=#{id} AND tlm_pwd=#{pwd}
+		
+	</select>
+	
+	<insert id="insertMemberInfo">
+	
+		INSERT INTO tl_member(
+			tlm_id,
+			tlm_pwd,
+			tlm_name,
+			tlm_email,
+			tlm_birth,
+			tlm_terms
+		
+		)
+		VALUES (
+			#{tlm_id},
+			#{tlm_pwd},
+			#{tlm_name},
+			#{tlm_email},
+			#{tlm_birth},
+			#{tlm_terms}
+
+		)
+	</insert>
+	
+	<select id="selectUserCntById" resultType="java.lang.Integer">
+		SELECT COUNT(*) FROM  	tl_member WHERE tlm_id=#{id}
+	</select>
+	<select id="selectUserCntByEmail" resultType="java.lang.Integer">
+		SELECT COUNT(*) FROM  tl_member WHERE tlm_email=#{email}
+	</select>
+	
+	
+
+</mapper>

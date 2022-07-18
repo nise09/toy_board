@@ -1,0 +1,24 @@
+/* login.css */
+
+.login_area {padding: 100px 0; width: 250px; margin: 0 auto;}
+
+.login_area > input {width: 100%; font-family: "Noto Sans KR"; box-sizing: border-box;
+	padding:10px; border: 1px solid #ccc; border-radius: 3px; margin-bottom: 10px;
+	outline: none; font-size: 14px;
+}
+
+.login_area > h1 {font-size: 18px; font-weight: 500; color: #434343; text-align: center;
+	margin-bottom: 30px;
+}
+#secure_login {display: none;}
+
+
+#secure_text{font-size: 14px;}
+#login, #join {
+	display: block; text-align: center; width: 100%; font-size: 14px; height: 40px; line-height: 40px;
+	border-radius: 5px; border: 1px solid  #6799FF; margin-top: 10px; outline: none;
+}
+#login {background-color: #6799FF; color: #fff;}
+#join {background-color: #fff; color:  #6799FF; text-decoration: none;}
+.option_area {margin-bottom: 20px;}
+
