@@ -1,4 +1,4 @@
-package com.tour_leave;
+package com.toy_project;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(TourLeaveApplication.class);
+		return application.sources(Toy_ProjectApplication.class);
 	}
 
 }

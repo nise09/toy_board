@@ -8,12 +8,12 @@
 		<version>2.4.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.tour_leave</groupId>
-	<artifactId>tour_leave</artifactId>
+	<groupId>com.toy_project</groupId>
+	<artifactId>toy_project</artifactId>
 	<version>0.0.1</version>
 	<packaging>war</packaging>
-	<name>tour_leave</name>
-	<description>투어리브</description>
+	<name>Toy_Project</name>
+	<description>토이 프로젝트</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
