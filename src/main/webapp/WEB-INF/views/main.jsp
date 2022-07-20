@@ -10,8 +10,9 @@
 </head>
 <body>
 <%@ include file="/WEB-INF/views/include/navbar.jsp" %>
-
+	
 	<h1> 심심하니깐 무슨 개인 프로젝트 만들까...</h1>
+	
 	
 </body>
 </html>
